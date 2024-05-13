@@ -8,9 +8,9 @@
     <title>My|web</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
-        <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.css">
     <style type="text/css">
         /* Styles for the search container */
         .search-container {
@@ -69,7 +69,86 @@
                 </nav>
             </div>
             <h1 class="google-logo-header text-white">Google</h1>
-         
+
+            <div class="text-center">
+                I am centered
+                <h1 class="google-logo-header text-white">Google</h1>
+            </div>
+
+            <form method="POST" action="/search">
+
+                <div class="search-container" type="text-center">
+                    <style>
+                        .search-container {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            max-width: 400px;
+                            /* adjust as needed */
+                            margin: 0 auto;
+                        }
+
+                        .search-input {
+                            padding: 10px 40px 10px 10px;
+
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            width: 100%;
+                            box-sizing: border-box;
+                            font-size: 16px;
+                        }
+
+                        .search-icon,
+                        .voice-icon,
+                        .camera-icon {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            cursor: pointer;
+                        }
+
+                        .search-icon {
+                            right: 10px;
+                        }
+
+                        .voice-icon {
+                            right: 50px;
+                        }
+
+                        .camera-icon {
+                            right: 90px;
+                        }
+                    </style>
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <span class="search-icon">&#128269;</span>
+                    <span class="voice-icon">&#128266;</span>
+                    <span class="camera-icon">&#128247;</span>
+                </div>
+                <div>
+                    <style>
+                        .search-container {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            max-width: 400px;
+                            margin: 0 auto;
+                        }
+
+                        .search-input {
+                            padding: 10px 40px 10px 10px;
+
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            width: 100%;
+                            box-sizing: border-box;
+                            font-size: 16px;
+                        }
+                    </style>
+
+                    <input class="text" type="text-align center" placeholder="Google Search" name="search2">
+                    <input class="text" type="text-align center" placeholder="I Feel lucky" name="search2">
+                </div>
+            </form>
 
 
         </div>
