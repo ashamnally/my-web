@@ -31,13 +31,84 @@
                     </div>
                 </nav>
             </div>
-            <h1 class="google-logo-header text-white">Google</h1>
+            <div class="text-center">
+                I am centered
+                <h1 class="google-logo-header text-white">Google</h1>
+            </div>
+
             <form method="POST" action="/search">
-                <input class="text form-control" type="search_bar" placeholder="Search.." name="search">
-                <button class="glyphicon glyphicon-camera"></button>
-                <button class="btn" name="search_area">🔍</button>
-                <span class="glyphicon glyphicon-voice"></span>
-                <span class="voice-icon">&#128266;</span>
+                
+                <div class="search-container" type="text-center">
+                    <style>
+                        .search-container {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            max-width: 400px;
+                            /* adjust as needed */
+                            margin: 0 auto;
+                        }
+
+                        .search-input {
+                            padding: 10px 40px 10px 10px;
+                            
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            width: 100%;
+                            box-sizing: border-box;
+                            font-size: 16px;
+                        }
+
+                        .search-icon,
+                        .voice-icon,
+                        .camera-icon {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            cursor: pointer;
+                        }
+
+                        .search-icon {
+                            right: 10px;
+                        }
+
+                        .voice-icon {
+                            right: 50px;
+                        }
+
+                        .camera-icon {
+                            right: 90px;
+                        }
+                    </style>
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <span class="search-icon">&#128269;</span>
+                    <span class="voice-icon">&#128266;</span>
+                    <span class="camera-icon">&#128247;</span>
+                </div>
+                <div >
+                    <style>
+                    .search-container {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            max-width: 400px;
+                            margin: 0 auto;
+                        }
+
+                        .search-input {
+                            padding: 10px 40px 10px 10px;
+                            
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            width: 100%;
+                            box-sizing: border-box;
+                            font-size: 16px;
+                        }
+                </style>
+
+                <input class="text" type="text-align center" placeholder="Google Search" name="search2">
+                <input class="text" type="text-align center" placeholder="I Feel lucky" name="search2">
+            </div>
             </form>
 
 
