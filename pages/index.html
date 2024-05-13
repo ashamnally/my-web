@@ -5,9 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="dark light" name="color-scheme">
+    <title>My|web</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>My|web</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.css">
+    <style type="text/css">
+        /* Styles for the search container */
+        .search-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            overflow: hidden;
+            width: 300px;
+            /* Adjust width as needed */
+        }
+
+        /* Styles for the search input */
+        .search-input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+        /* Styles for the search button */
+        .search-button {
+            background-color: #f2f2f2;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        /* Styles for the search icon */
+        .search-button i {
+            color: #333;
+        }
+    </style>
 </head>
 
 
@@ -16,28 +53,30 @@
     <body>
         <div class="container-fluid bg-dark">
             <div class="header">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-right">
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="collapse navbar-collapse text-right" id="navbarTogglerDemo01">
                         <a class="navbar-brand" href="#">Hidden brand</a>
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item active">
+                            <li class="nav-item active text-end">
                                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
 
                         </ul>
                         <form class="form-inline my-2 my-lg-0 text-right">
-                            <button class="btn btn-primary btn-lg my-2 my-sm-0 align-left" type="submit">Login</button>
+                            <button class="btn btn-primary btn-lg my-2 my-sm-0 " type="submit">Login</button>
                         </form>
                     </div>
                 </nav>
             </div>
+            <h1 class="google-logo-header text-white">Google</h1>
+
             <div class="text-center">
                 I am centered
                 <h1 class="google-logo-header text-white">Google</h1>
             </div>
 
             <form method="POST" action="/search">
-                
+
                 <div class="search-container" type="text-center">
                     <style>
                         .search-container {
@@ -51,7 +90,7 @@
 
                         .search-input {
                             padding: 10px 40px 10px 10px;
-                            
+
                             border: 1px solid #ccc;
                             border-radius: 5px;
                             width: 100%;
@@ -86,9 +125,28 @@
                     <span class="camera-icon">&#128247;</span>
                 </div>
                 <div >
+                    <style>
+                    .search-container {
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            max-width: 400px;
+                            margin: 0 auto;
+                        }
 
-                <input class="text" type="text-center" placeholder="Google Search" name="search2">
-                <input class="text" type="text-center" placeholder="I Feel lucky" name="search2">
+                        .search-input {
+                            padding: 10px 40px 10px 10px;
+                            
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            width: 100%;
+                            box-sizing: border-box;
+                            font-size: 16px;
+                        }
+                </style>
+
+                <input class="text" type="text-align center" placeholder="Google Search" name="search2">
+                <input class="text" type="text-align center" placeholder="I Feel lucky" name="search2">
             </div>
             </form>
 
