@@ -16,19 +16,6 @@
             position: relative;
             display: flex;
             align-items: center;
-            max-width: 400px;
-            /* adjust as needed */
-            margin: 0 auto;
-        }
-
-        .search-input {
-            padding: 10px 40px 10px 10px;
-
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 100%;
-            box-sizing: border-box;
-            font-size: 16px;
         }
 
         .search-icon,
@@ -67,7 +54,16 @@
             border-radius: 5px;
             width: 100%;
             box-sizing: border-box;
-            font-size: 16px;
+            font-size: 16px;}
+        .search-button {
+            background-color: #f2f2f2;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .search-button i {
+            color: #333;
         }
     </style>
 </head>
@@ -96,6 +92,7 @@
 
             <form method="POST" action="/search">
                 <div class="search-container" type="text-center">
+        
                     <input type="text" class="search-input" placeholder="Search...">
                     <span class="search-icon"><i class="fa fa-search"></i></span>
                     <span class="voice-icon"><i class="fa fa-microphone"></i></span>
