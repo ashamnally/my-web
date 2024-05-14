@@ -54,7 +54,9 @@
             border-radius: 5px;
             width: 100%;
             box-sizing: border-box;
-            font-size: 16px;}
+            font-size: 16px;
+        }
+
         .search-button {
             background-color: #f2f2f2;
             border: none;
@@ -77,6 +79,9 @@
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div class="collapse navbar-collapse">
                         <form class="form-inline my-2 my-lg-0 text-right">
+                            <button class="btn btn-outline-secondary btn-lg my-2 my-sm-0 " type="submit">
+                                Gmail</button>
+                            <button class="btn btn-outline-secondary btn-lg my-2 my-sm-0 " type="submit">Photo</button>
                             <button class="btn btn-outline-secondary btn-lg my-2 my-sm-0 " type="submit"><i
                                     class="fa fa-th"></i></button>
                             <button class="btn btn-primary btn-lg my-2 my-sm-0 " type="submit">Login</button>
@@ -92,22 +97,31 @@
 
             <form method="POST" action="/search">
                 <div class="search-container" type="text-center">
-        
+
                     <input type="text" class="search-input" placeholder="Search...">
                     <span class="search-icon"><i class="fa fa-search"></i></span>
                     <span class="voice-icon"><i class="fa fa-microphone"></i></span>
                     <span class="camera-icon"><i class="fa fa-camera"></i></span>
                 </div><br><br>
-                
+
                 <div class="text-center">
 
-                    <button class="btn btn-secondary" type="text-align center" name="search2"> Google Search</button>
+                    <button class="btn btn-secondary" type="text-center" name="search2"> Google Search</button>
                     &nbsp; &nbsp;
-                    <button class="btn btn-secondary" type="text-align center" name="search2">I Feel lucky</button>
+                    <button class="btn btn-secondary" type="text-center" name="search2">I Feel lucky</button>
+                </div>
+                <div class="text-center">
+                    <p style="color: #f2f2f2;">
+                        Google is available in:
+                    
+                    </p>
+                    <p style="color:blue">
+                        english
+                    </p>
                 </div>
             </form><br><br><br><br><br>
 
-            
+
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
